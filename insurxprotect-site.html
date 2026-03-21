@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurx Protect | Secure Your Family's Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2D2D2D;
+        }
+
+        /* Hide default details marker */
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0A1628;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #112240;
+        }
+
+        /* Hide scrollbar for slider but keep functionality */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Edge masking for slider */
+        .mask-edges {
+            mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+        }
+
+        /* Animation classes */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+
+        .fade-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-[#C9A84C] selection:text-[#0A1628] bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed z-50 transition-all duration-300 bg-slate-50 w-full border-gray-100 border-b top-0 backdrop-blur-md"
+        id="navbar">
+        <div class="flex h-20 max-w-7xl mr-auto ml-auto pr-6 pl-6 items-center justify-between">
+            <a href="#" class="text-2xl font-medium tracking-tighter text-[#0A1628]">
+                Insurx
+                <span class="text-[#C9A84C]">Protect</span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#products" class="text-sm font-normal text-gray-600 hover:text-[#0A1628] transition-colors">
+                    Products
+                </a>
+                <a href="#why-us" class="text-sm font-normal text-gray-600 hover:text-[#0A1628] transition-colors">
+                    Why Us
+                </a>
+                <a href="#how-it-works"
+                    class="text-sm font-normal text-gray-600 hover:text-[#0A1628] transition-colors">
+                    How It Works
+                </a>
+                <a href="#testimonials"
+                    class="text-sm font-normal text-gray-600 hover:text-[#0A1628] transition-colors">
+                    Testimonials
+                </a>
+                <a href="#faq" class="text-sm font-normal text-gray-600 hover:text-[#0A1628] transition-colors">
+                    FAQ
+                </a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="#consultation"
+                    class="inline-flex items-center justify-center hover:bg-[#b5953e] hover:-translate-y-0.5 hover:shadow-lg transition-all text-sm font-medium text-slate-50 bg-[#C9A84C] rounded-lg px-5 py-2.5">
+                    Book Free Consultation
+                </a>
+            </div>
+
+            <button class="md:hidden text-[#0A1628]" id="mobile-menu-btn" aria-label="Toggle menu">
+                <iconify-icon icon="solar:hamburger-menu-linear" class="text-3xl"></iconify-icon>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t border-gray-100 absolute w-full" id="mobile-menu">
+            <div class="flex flex-col px-6 py-4 space-y-4 shadow-lg">
+                <a href="#products" class="text-base font-normal text-gray-600 mobile-link">
+                    Products
+                </a>
+                <a href="#why-us" class="text-base font-normal text-gray-600 mobile-link">
+                    Why Us
+                </a>
+                <a href="#how-it-works" class="text-base font-normal text-gray-600 mobile-link">
+                    How It Works
+                </a>
+                <a href="#testimonials" class="text-base font-normal text-gray-600 mobile-link">
+                    Testimonials
+                </a>
+                <a href="#faq" class="text-base font-normal text-gray-600 mobile-link">
+                    FAQ
+                </a>
+                <a href="#consultation"
+                    class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-[#0A1628] bg-[#C9A84C] rounded-lg w-full text-center mobile-link">
+                    Book Free Consultation
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-[90vh] flex pt-20 pb-16 relative items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1756982477661-107a1c72c8fd?w=3840&q=80" alt="Confident family"
+                class="w-full h-full object-cover">
+            <div
+                class="bg-gradient-to-r from-[#0A1628]/95 via-[#0A1628]/80 to-[#0A1628]/40 absolute top-0 right-0 bottom-0 left-0">
+            </div>
+        </div>
+
+        <div class="fade-up w-full max-w-7xl z-10 mr-auto ml-auto pt-20 pr-6 pb-32 pl-6 relative">
+            <div class="max-w-3xl">
+                <h1 class="md:text-6xl leading-tight text-4xl font-medium text-white tracking-tight mb-6">
+                    Protect What Matters Most. Secure Your Family's Future Today.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+                    Insurx Protect delivers tailored life insurance solutions backed by
+                    decades of expertise. No jargon. No pressure. Just protection you
+                    can count on.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="#consultation"
+                        class="inline-flex items-center justify-center hover:bg-[#b5953e] hover:-translate-y-0.5 hover:shadow-xl transition-all shadow-[#C9A84C]/20 sm:w-auto text-lg font-medium text-gray-50 bg-[#C9A84C] w-full rounded-lg px-8 py-4 shadow-lg">
+                        Book Your Free Consultation
+                    </a>
+                    <a href="#products"
+                        class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-transparent border-2 border-white/30 rounded-lg hover:bg-white/10 hover:border-white transition-all w-full sm:w-auto">
+                        Explore Our Plans
+                    </a>
+                </div>
+
+                <!-- Trust Bar -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-8 border-t border-white/10">
+                    <div class="flex items-center gap-2">
+                        <div class="flex text-[#C9A84C] text-lg">
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold" class=""></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        </div>
+                        <span class="text-base font-normal text-gray-300">
+                            Rated 4.9/5 by 2,000+ clients
+                        </span>
+                    </div>
+                    <div class="hidden sm:block w-px h-4 bg-white/20"></div>
+                    <div class="flex items-center gap-4 text-base font-normal text-gray-300">
+                        <span class="flex items-center gap-1.5">
+                            <iconify-icon icon="solar:shield-check-linear"
+                                class="text-xl text-[#C9A84C]"></iconify-icon>
+                            A+ Rated
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <iconify-icon icon="solar:map-point-linear" class="text-xl text-[#C9A84C]"></iconify-icon>
+                            Licensed in 50 States
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners Logo Slider -->
+
+
+    <!-- Social Proof Bar -->
+    <section class="-mt-24 z-30 group/section max-w-7xl mr-auto ml-auto pr-6 pl-6 relative">
+        <style>
+            @keyframes infinite-scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            .animate-infinite-scroll {
+                animation: infinite-scroll 35s linear infinite;
+            }
+
+            .group\/slider:hover .animate-infinite-scroll {
+                animation-play-state: paused;
+            }
+        </style>
+
+        <div
+            class="overflow-hidden transition-transform duration-700 hover:-translate-y-1 sm:px-16 bg-neutral-50 border-white/60 border rounded-[2rem] px-6 py-12 relative shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] backdrop-blur-xl">
+            <!-- Ambient Background Glow -->
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-[#00529B]/5 via-[#C9A84C]/5 to-transparent blur-3xl pointer-events-none rounded-full animate-pulse"
+                style="z-index: -1;"></div>
+
+            <!-- Section Title -->
+            <h3
+                class="uppercase flex items-center justify-center gap-6 text-base font-normal text-gray-800 tracking-[0.2em] text-center mb-12">
+                <span class="w-12 h-px bg-gradient-to-r from-transparent to-gray-200"></span>
+                We Work with Leading Insurance Companies
+                <span class="w-12 h-px bg-gradient-to-l from-transparent to-gray-200"></span>
+            </h3>
+
+            <!-- Continuous Slider Wrapper with Edge Mask -->
+            <div class="relative w-full overflow-hidden group/slider"
+                style="-webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);">
+                <!-- Animated Track -->
+                <div class="flex w-max animate-infinite-scroll">
+                    <!-- Set 1 -->
+                    <div class="flex items-center gap-20 md:gap-32 pr-20 md:pr-32">
+                        <!-- Logo 1: CVS Health -->
+                        <div
+                            class="flex items-center gap-2 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo">
+                            <iconify-icon icon="mdi:cards-heart"
+                                class="text-[#CC0000] text-3xl group-hover/logo:scale-110 transition-transform duration-500"></iconify-icon>
+                            <div class="flex items-baseline">
+                                <span class="font-normal text-2xl tracking-tight text-gray-900 font-sans">
+                                    CVS
+                                </span>
+                                <span class="text-2xl tracking-tight text-gray-700 font-sans ml-1">
+                                    Health
+                                </span>
+                                <span class="text-xs align-top ml-0.5 text-gray-400">®</span>
+                            </div>
+                        </div>
+
+                        <!-- Logo 2: Anthem -->
+                        <div
+                            class="flex items-center gap-2 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo text-[#00529B]">
+                            <span class="font-serif font-normal text-3xl tracking-tight">
+                                Anthem
+                            </span>
+                            <span class="text-xs align-top -ml-1 text-gray-400">®</span>
+                            <div
+                                class="flex items-center gap-0.5 ml-1 group-hover/logo:-translate-y-1 transition-transform duration-500">
+                                <iconify-icon icon="mdi:medical-cross" class="text-2xl"></iconify-icon>
+                                <iconify-icon icon="mdi:shield-half-full" class="text-2xl"></iconify-icon>
+                            </div>
+                        </div>
+
+                        <!-- Logo 3: American-Amicable -->
+                        <div
+                            class="flex items-center gap-3 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo">
+                            <div
+                                class="w-6 h-10 bg-gray-100 border-b-4 border-[#CC0000] relative overflow-hidden group-hover/logo:shadow-[inset_0_2px_10px_rgba(0,0,0,0.05)] transition-all duration-500 rounded-t-sm">
+                                <div class="absolute top-1.5 left-0 right-0 h-px bg-white"></div>
+                                <div class="absolute top-3.5 left-0 right-0 h-px bg-white"></div>
+                                <div class="absolute top-5.5 left-0 right-0 h-px bg-white"></div>
+                                <div class="absolute top-7.5 left-0 right-0 h-px bg-white"></div>
+                            </div>
+                            <div class="flex flex-col justify-center text-[#003366]">
+                                <span class="text-sm font-serif leading-none tracking-wider uppercase">
+                                    American-Amicable
+                                </span>
+                                <span
+                                    class="text-[9px] font-sans leading-none tracking-[0.2em] uppercase text-gray-400 mt-1.5">
+                                    Group of Companies
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Logo 4: HealthSpring -->
+                        <div
+                            class="flex items-center gap-1.5 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo">
+                            <span
+                                class="text-4xl font-normal text-[#8A2BE2] tracking-tighter italic mr-1 group-hover/logo:-rotate-12 group-hover/logo:scale-110 transition-transform duration-500">
+                                h
+                            </span>
+                            <div class="flex items-baseline">
+                                <span class="text-2xl font-normal text-gray-900 tracking-tight">
+                                    HealthSpring
+                                </span>
+                                <span class="text-xs align-top ml-0.5 text-gray-400">™</span>
+                            </div>
+                        </div>
+
+                        <!-- Logo 5: CVS Health (Repeat for width) -->
+                        <div
+                            class="flex items-center gap-2 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo">
+                            <iconify-icon icon="mdi:cards-heart"
+                                class="text-[#CC0000] text-3xl group-hover/logo:scale-110 transition-transform duration-500"></iconify-icon>
+                            <div class="flex items-baseline">
+                                <span class="font-normal text-2xl tracking-tight text-gray-900 font-sans">
+                                    CVS
+                                </span>
+                                <span class="text-2xl tracking-tight text-gray-700 font-sans ml-1">
+                                    Health
+                                </span>
+                                <span class="text-xs align-top ml-0.5 text-gray-400">®</span>
+                            </div>
+                        </div>
+
+                        <!-- Logo 6: Anthem (Repeat for width) -->
+                        <div
+                            class="flex items-center gap-2 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo text-[#00529B]">
+                            <span class="font-serif font-normal text-3xl tracking-tight">
+                                Anthem
+                            </span>
+                            <span class="text-xs align-top -ml-1 text-gray-400">®</span>
+                            <div
+                                class="flex items-center gap-0.5 ml-1 group-hover/logo:-translate-y-1 transition-transform duration-500">
+                                <iconify-icon icon="mdi:medical-cross" class="text-2xl"></iconify-icon>
+                                <iconify-icon icon="mdi:shield-half-full" class="text-2xl"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Set 2 (Exact Duplicate for Seamless Looping) -->
+                    <div class="flex items-center gap-20 md:gap-32 pr-20 md:pr-32">
+                        <!-- Logo 1: CVS Health -->
+                        <div
+                            class="flex items-center gap-2 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo">
+                            <iconify-icon icon="mdi:cards-heart"
+                                class="text-[#CC0000] text-3xl group-hover/logo:scale-110 transition-transform duration-500"></iconify-icon>
+                            <div class="flex items-baseline">
+                                <span class="font-normal text-2xl tracking-tight text-gray-900 font-sans">
+                                    CVS
+                                </span>
+                                <span class="text-2xl tracking-tight text-gray-700 font-sans ml-1">
+                                    Health
+                                </span>
+                                <span class="text-xs align-top ml-0.5 text-gray-400">®</span>
+                            </div>
+                        </div>
+
+                        <!-- Logo 2: Anthem -->
+                        <div
+                            class="flex items-center gap-2 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo text-[#00529B]">
+                            <span class="font-serif font-normal text-3xl tracking-tight">
+                                Anthem
+                            </span>
+                            <span class="text-xs align-top -ml-1 text-gray-400">®</span>
+                            <div
+                                class="flex items-center gap-0.5 ml-1 group-hover/logo:-translate-y-1 transition-transform duration-500">
+                                <iconify-icon icon="mdi:medical-cross" class="text-2xl"></iconify-icon>
+                                <iconify-icon icon="mdi:shield-half-full" class="text-2xl"></iconify-icon>
+                            </div>
+                        </div>
+
+                        <!-- Logo 3: American-Amicable -->
+                        <div
+                            class="flex items-center gap-3 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo">
+                            <div
+                                class="w-6 h-10 bg-gray-100 border-b-4 border-[#CC0000] relative overflow-hidden group-hover/logo:shadow-[inset_0_2px_10px_rgba(0,0,0,0.05)] transition-all duration-500 rounded-t-sm">
+                                <div class="absolute top-1.5 left-0 right-0 h-px bg-white"></div>
+                                <div class="absolute top-3.5 left-0 right-0 h-px bg-white"></div>
+                                <div class="absolute top-5.5 left-0 right-0 h-px bg-white"></div>
+                                <div class="absolute top-7.5 left-0 right-0 h-px bg-white"></div>
+                            </div>
+                            <div class="flex flex-col justify-center text-[#003366]">
+                                <span class="text-sm font-serif leading-none tracking-wider uppercase">
+                                    American-Amicable
+                                </span>
+                                <span
+                                    class="text-[9px] font-sans leading-none tracking-[0.2em] uppercase text-gray-400 mt-1.5">
+                                    Group of Companies
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Logo 4: HealthSpring -->
+                        <div
+                            class="flex items-center gap-1.5 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo">
+                            <span
+                                class="text-4xl font-normal text-[#8A2BE2] tracking-tighter italic mr-1 group-hover/logo:-rotate-12 group-hover/logo:scale-110 transition-transform duration-500">
+                                h
+                            </span>
+                            <div class="flex items-baseline">
+                                <span class="text-2xl font-normal text-gray-900 tracking-tight">
+                                    HealthSpring
+                                </span>
+                                <span class="text-xs align-top ml-0.5 text-gray-400">™</span>
+                            </div>
+                        </div>
+
+                        <!-- Logo 5: CVS Health (Repeat for width) -->
+                        <div
+                            class="flex items-center gap-2 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo">
+                            <iconify-icon icon="mdi:cards-heart"
+                                class="text-[#CC0000] text-3xl group-hover/logo:scale-110 transition-transform duration-500"></iconify-icon>
+                            <div class="flex items-baseline">
+                                <span class="font-normal text-2xl tracking-tight text-gray-900 font-sans">
+                                    CVS
+                                </span>
+                                <span class="text-2xl tracking-tight text-gray-700 font-sans ml-1">
+                                    Health
+                                </span>
+                                <span class="text-xs align-top ml-0.5 text-gray-400">®</span>
+                            </div>
+                        </div>
+
+                        <!-- Logo 6: Anthem (Repeat for width) -->
+                        <div
+                            class="flex items-center gap-2 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer group/logo text-[#00529B]">
+                            <span class="font-serif font-normal text-3xl tracking-tight">
+                                Anthem
+                            </span>
+                            <span class="text-xs align-top -ml-1 text-gray-400">®</span>
+                            <div
+                                class="flex items-center gap-0.5 ml-1 group-hover/logo:-translate-y-1 transition-transform duration-500">
+                                <iconify-icon icon="mdi:medical-cross" class="text-2xl"></iconify-icon>
+                                <iconify-icon icon="mdi:shield-half-full" class="text-2xl"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="z-20 -mt-12 bg-gray-50 border-white/5 border-b pt-24 pb-16 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/10">
+                <div class="text-center px-4 fade-up">
+                    <div class="text-3xl md:text-5xl font-medium tracking-tight text-[#C9A84C] mb-2 counter"
+                        data-target="15">1</div>
+                    <div class="text-xs md:text-sm font-normal text-gray-400 uppercase tracking-widest">
+                        Years of Experience
+                    </div>
+                </div>
+                <div class="text-center px-4 fade-up" style="transition-delay: 100ms;">
+                    <div class="text-3xl md:text-5xl font-medium tracking-tight text-[#C9A84C] mb-2">
+                        $
+                        <span class="counter" data-target="2">1</span>
+                        B+
+                    </div>
+                    <div class="text-xs md:text-sm font-normal text-gray-400 uppercase tracking-widest">
+                        Coverage Delivered
+                    </div>
+                </div>
+                <div class="text-center px-4 fade-up" style="transition-delay: 200ms;">
+                    <div class="text-3xl md:text-5xl font-medium tracking-tight text-[#C9A84C] mb-2">
+                        <span class="counter" data-target="10000">80</span>
+                        +
+                    </div>
+                    <div class="text-xs md:text-sm font-normal text-gray-400 uppercase tracking-widest">
+                        Families Protected
+                    </div>
+                </div>
+                <div class="text-center px-4 fade-up" style="transition-delay: 300ms;">
+                    <div class="text-3xl md:text-5xl font-medium tracking-tight text-[#C9A84C] mb-2">
+                        <span class="counter" data-target="98">1</span>
+                        %
+                    </div>
+                    <div class="text-xs md:text-sm font-normal text-gray-400 uppercase tracking-widest">
+                        Client Satisfaction
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="z-20 bg-white pt-24 pb-24 relative" id="network-map">
+        <div class="max-w-7xl mr-auto ml-auto pr-6 pl-6">
+            <h2 class="md:text-4xl fade-up text-3xl font-medium text-[#0A1628] tracking-tight text-center mb-12">
+                Our Large Network Brings Agents Closer to You
+            </h2>
+
+            <div class="md:h-[650px] overflow-hidden fade-up bg-[#F8F9FA] w-full h-[500px] border-gray-200 border rounded-[2rem] relative shadow-sm"
+                style="transition-delay: 100ms">
+
+                <!-- Stylized US Map Background -->
+                <div class="absolute inset-0 opacity-[0.2] pointer-events-none"
+                    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1a/Blank_US_Map_%28states_only%29.svg'); background-size: cover; background-position: center; filter: grayscale(100%); mix-blend-mode: multiply;">
+                </div>
+
+                <!-- Map Bubbles Container -->
+                <div class="absolute inset-0 pointer-events-none">
+
+                    <!-- Northeast / NY -->
+                    <div
+                        class="absolute top-[28%] left-[82%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div class="absolute inset-0 bg-[#C9A84C]/20 rounded-full animate-ping"
+                            style="animation-duration: 3s; animation-delay: 0s;"></div>
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-24 h-24 md:w-32 md:h-32 backdrop-blur-sm">
+                            <div class="w-2.5 h-2.5 bg-[#C9A84C] rounded-full shadow-[0_0_10px_rgba(201,168,76,1)]">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mid-Atlantic / DC -->
+                    <div
+                        class="absolute top-[38%] left-[80%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div class="absolute inset-0 bg-[#C9A84C]/20 rounded-full animate-ping"
+                            style="animation-duration: 3.5s; animation-delay: 0.5s;"></div>
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-16 h-16 md:w-20 md:h-20 backdrop-blur-sm">
+                            <div class="w-2 h-2 bg-[#C9A84C] rounded-full shadow-[0_0_10px_rgba(201,168,76,1)]"></div>
+                        </div>
+                    </div>
+
+                    <!-- Southeast / Florida -->
+                    <div
+                        class="absolute top-[75%] left-[78%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div class="absolute inset-0 bg-[#C9A84C]/20 rounded-full animate-ping"
+                            style="animation-duration: 4s; animation-delay: 1s;"></div>
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-20 h-20 md:w-28 md:h-28 backdrop-blur-sm">
+                            <div class="w-2 h-2 bg-[#C9A84C] rounded-full shadow-[0_0_10px_rgba(201,168,76,1)]"></div>
+                        </div>
+                    </div>
+
+                    <!-- South / Atlanta -->
+                    <div
+                        class="absolute top-[60%] left-[70%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-12 h-12 md:w-16 md:h-16 backdrop-blur-sm">
+                            <div class="w-1.5 h-1.5 bg-[#C9A84C] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Midwest / Chicago -->
+                    <div
+                        class="absolute top-[32%] left-[62%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div class="absolute inset-0 bg-[#C9A84C]/20 rounded-full animate-ping"
+                            style="animation-duration: 3.2s; animation-delay: 0.2s;"></div>
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-20 h-20 md:w-28 md:h-28 backdrop-blur-sm">
+                            <div class="w-2 h-2 bg-[#C9A84C] rounded-full shadow-[0_0_10px_rgba(201,168,76,1)]"></div>
+                        </div>
+                    </div>
+
+                    <!-- Texas / Dallas -->
+                    <div
+                        class="absolute top-[65%] left-[48%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div class="absolute inset-0 bg-[#C9A84C]/20 rounded-full animate-ping"
+                            style="animation-duration: 3.8s; animation-delay: 0.8s;"></div>
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-24 h-24 md:w-32 md:h-32 backdrop-blur-sm">
+                            <div class="w-2.5 h-2.5 bg-[#C9A84C] rounded-full shadow-[0_0_10px_rgba(201,168,76,1)]">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colorado / Denver -->
+                    <div
+                        class="absolute top-[45%] left-[35%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-14 h-14 md:w-20 md:h-20 backdrop-blur-sm">
+                            <div class="w-1.5 h-1.5 bg-[#C9A84C] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- West Coast / SoCal -->
+                    <div
+                        class="absolute top-[58%] left-[12%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div class="absolute inset-0 bg-[#C9A84C]/20 rounded-full animate-ping"
+                            style="animation-duration: 2.8s; animation-delay: 0.4s;"></div>
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-20 h-20 md:w-28 md:h-28 backdrop-blur-sm">
+                            <div class="w-2 h-2 bg-[#C9A84C] rounded-full shadow-[0_0_10px_rgba(201,168,76,1)]"></div>
+                        </div>
+                    </div>
+
+                    <!-- West Coast / NorCal -->
+                    <div
+                        class="absolute top-[40%] left-[8%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-16 h-16 md:w-24 md:h-24 backdrop-blur-sm">
+                            <div class="w-1.5 h-1.5 bg-[#C9A84C] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- PNW / Seattle -->
+                    <div
+                        class="absolute top-[15%] left-[12%] group pointer-events-auto cursor-pointer -translate-x-1/2 -translate-y-1/2">
+                        <div class="absolute inset-0 bg-[#C9A84C]/20 rounded-full animate-ping"
+                            style="animation-duration: 4.2s; animation-delay: 1.2s;"></div>
+                        <div
+                            class="relative bg-[#C9A84C]/30 rounded-full flex items-center justify-center border border-[#C9A84C]/40 transition-transform duration-300 group-hover:scale-110 w-14 h-14 md:w-20 md:h-20 backdrop-blur-sm">
+                            <div class="w-1.5 h-1.5 bg-[#C9A84C] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Secondary smaller dots -->
+                    <div
+                        class="absolute top-[25%] left-[50%] w-8 h-8 bg-[#C9A84C]/20 rounded-full border border-[#C9A84C]/30 flex items-center justify-center -translate-x-1/2 -translate-y-1/2">
+                        <div class="w-1 h-1 bg-[#C9A84C] rounded-full"></div>
+                    </div>
+                    <div
+                        class="absolute top-[50%] left-[60%] w-10 h-10 bg-[#C9A84C]/20 rounded-full border border-[#C9A84C]/30 flex items-center justify-center -translate-x-1/2 -translate-y-1/2">
+                        <div class="w-1 h-1 bg-[#C9A84C] rounded-full"></div>
+                    </div>
+                    <div
+                        class="absolute top-[35%] left-[25%] w-12 h-12 bg-[#C9A84C]/20 rounded-full border border-[#C9A84C]/30 flex items-center justify-center -translate-x-1/2 -translate-y-1/2">
+                        <div class="w-1 h-1 bg-[#C9A84C] rounded-full"></div>
+                    </div>
+                    <div
+                        class="absolute top-[20%] left-[70%] w-8 h-8 bg-[#C9A84C]/20 rounded-full border border-[#C9A84C]/30 flex items-center justify-center -translate-x-1/2 -translate-y-1/2">
+                        <div class="w-1 h-1 bg-[#C9A84C] rounded-full"></div>
+                    </div>
+                    <div
+                        class="absolute top-[70%] left-[30%] w-10 h-10 bg-[#C9A84C]/20 rounded-full border border-[#C9A84C]/30 flex items-center justify-center -translate-x-1/2 -translate-y-1/2">
+                        <div class="w-1 h-1 bg-[#C9A84C] rounded-full"></div>
+                    </div>
+                </div>
+
+                <!-- Bottom Overlay Bar -->
+                <div
+                    class="absolute bottom-0 left-0 right-0 bg-[#112240]/85 backdrop-blur-md border-t border-white/5 px-8 py-8 md:px-12 md:py-10 flex flex-col md:flex-row items-center justify-between gap-6 pointer-events-auto">
+                    <h3
+                        class="text-2xl md:text-3xl font-medium tracking-tight text-white max-w-xl text-center md:text-left">
+                        We have agents all over the country ready to help you.
+                    </h3>
+                    <a href="#find-agent"
+                        class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-[#0A1628] bg-[#C9A84C] rounded-xl hover:bg-[#b5953e] hover:-translate-y-0.5 transition-all shadow-lg shrink-0 whitespace-nowrap">
+                        Contact an Agent
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="products" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="md:text-4xl text-3xl font-medium text-[#0A1628] tracking-tight mb-4">
+                    Coverage That Fits Your Life
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Straightforward protection designed to meet your specific needs at
+                    every stage of life.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 fade-up">
+                    <div
+                        class="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center mb-6 text-[#C9A84C] group-hover:scale-110 transition-transform duration-300">
+                        <iconify-icon icon="solar:shield-linear" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium tracking-tight text-[#0A1628] mb-3">
+                        Term Life Insurance
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Affordable coverage for a specific period (10-30 years). Ideal for
+                        protecting young families, covering a mortgage, or replacing
+                        income during your primary earning years.
+                    </p>
+                    <a href="#consultation"
+                        class="inline-flex items-center text-sm font-medium text-[#C9A84C] hover:text-[#0A1628] transition-colors group-hover:translate-x-1 duration-300">
+                        Learn More
+                        <iconify-icon icon="solar:arrow-right-linear" class="ml-1.5 text-lg"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 fade-up"
+                    style="transition-delay: 100ms;">
+                    <div
+                        class="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center mb-6 text-[#C9A84C] group-hover:scale-110 transition-transform duration-300">
+                        <iconify-icon icon="solar:umbrella-linear" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium tracking-tight text-[#0A1628] mb-3">
+                        Whole Life Insurance
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Permanent protection that lasts your entire life. Features level
+                        premiums and builds tax-deferred cash value over time that you can
+                        borrow against if needed.
+                    </p>
+                    <a href="#consultation"
+                        class="inline-flex items-center text-sm font-medium text-[#C9A84C] hover:text-[#0A1628] transition-colors group-hover:translate-x-1 duration-300">
+                        Learn More
+                        <iconify-icon icon="solar:arrow-right-linear" class="ml-1.5 text-lg"></iconify-icon>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 fade-up"
+                    style="transition-delay: 200ms;">
+                    <div
+                        class="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center mb-6 text-[#C9A84C] group-hover:scale-110 transition-transform duration-300">
+                        <iconify-icon icon="solar:users-group-two-rounded-linear" class="text-2xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium tracking-tight text-[#0A1628] mb-3">
+                        Final Expense Insurance
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        A smaller, permanent policy designed specifically to lift the
+                        financial burden of funeral costs, medical bills, and end-of-life
+                        expenses from your loved ones.
+                    </p>
+                    <a href="#consultation"
+                        class="inline-flex items-center text-sm font-medium text-[#C9A84C] hover:text-[#0A1628] transition-colors group-hover:translate-x-1 duration-300">
+                        Learn More
+                        <iconify-icon icon="solar:arrow-right-linear" class="ml-1.5 text-lg"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#0A1628] pt-24 pb-24" id="why-us">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-white mb-10">
+                        Why Thousands Trust Insurx Protect
+                    </h2>
+
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div
+                                class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#C9A84C]/20 flex items-center justify-center">
+                                <iconify-icon icon="solar:check-read-linear"
+                                    class="text-[#C9A84C] text-sm"></iconify-icon>
+                            </div>
+                            <div class="">
+                                <h4 class="text-xl font-medium text-white mb-1 tracking-tight">
+                                    Expert Guidance
+                                </h4>
+                                <p class="text-lg text-gray-400">
+                                    Licensed advisors who simplify the complex and decode
+                                    industry jargon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div
+                                class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#C9A84C]/20 flex items-center justify-center">
+                                <iconify-icon icon="solar:check-read-linear"
+                                    class="text-[#C9A84C] text-sm"></iconify-icon>
+                            </div>
+                            <div class="">
+                                <h4 class="text-xl font-medium text-white mb-1 tracking-tight">
+                                    No-Pressure Approach
+                                </h4>
+                                <p class="text-lg text-gray-400">
+                                    We educate first, sell second. Your comfort and
+                                    understanding are our priorities.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div
+                                class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#C9A84C]/20 flex items-center justify-center">
+                                <iconify-icon icon="solar:check-read-linear"
+                                    class="text-[#C9A84C] text-sm"></iconify-icon>
+                            </div>
+                            <div class="">
+                                <h4 class="text-xl font-medium text-white mb-1 tracking-tight">
+                                    Custom Plans
+                                </h4>
+                                <p class="text-lg text-gray-400">
+                                    Coverage designed around your life, your family, and your
+                                    budget—not a rigid template.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div
+                                class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#C9A84C]/20 flex items-center justify-center">
+                                <iconify-icon icon="solar:check-read-linear"
+                                    class="text-[#C9A84C] text-sm"></iconify-icon>
+                            </div>
+                            <div class="">
+                                <h4 class="text-xl font-medium text-white mb-1 tracking-tight">
+                                    Fast &amp; Simple Process
+                                </h4>
+                                <p class="text-lg text-gray-400">
+                                    From initial consultation to locked-in coverage in as little
+                                    as 48 hours.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative fade-up" style="transition-delay: 200ms;">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-[#C9A84C]/20 to-transparent rounded-2xl transform translate-x-4 translate-y-4 -z-10">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Professional advisor" class="rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="overflow-hidden bg-white pt-24 pb-24" id="how-it-works">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-[#0A1628] mb-4">
+                    Getting Covered Is Easier Than You Think
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    A streamlined, transparent process designed to get you protected
+                    without the headache.
+                </p>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Desktop connecting line -->
+                <div class="hidden md:block absolute top-8 left-1/6 right-1/6 h-0.5 bg-gray-100 -z-10 w-2/3 mx-auto">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center text-center fade-up">
+                        <div
+                            class="w-16 h-16 rounded-full bg-white border-4 border-[#C9A84C] flex items-center justify-center text-2xl font-medium text-[#0A1628] mb-6 shadow-sm">
+                            1
+                        </div>
+                        <h3 class="text-xl font-medium tracking-tight text-[#0A1628] mb-3">
+                            Book a Free Consultation
+                        </h3>
+                        <p class="text-lg text-gray-600">
+                            Schedule a quick, no-obligation call with a licensed advisor to
+                            discuss your family's unique needs.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center text-center fade-up" style="transition-delay: 100ms;">
+                        <div
+                            class="w-16 h-16 rounded-full bg-white border-4 border-[#C9A84C] flex items-center justify-center text-2xl font-medium text-[#0A1628] mb-6 shadow-sm">
+                            2
+                        </div>
+                        <h3 class="text-xl font-medium tracking-tight text-[#0A1628] mb-3">
+                            Get Your Custom Plan
+                        </h3>
+                        <p class="text-lg text-gray-600">
+                            We analyze your situation and present clear, tailored options
+                            from top-rated carriers.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center text-center fade-up" style="transition-delay: 200ms;">
+                        <div
+                            class="w-16 h-16 rounded-full bg-white border-4 border-[#C9A84C] flex items-center justify-center text-2xl font-medium text-[#0A1628] mb-6 shadow-sm">
+                            3
+                        </div>
+                        <h3 class="text-xl font-medium tracking-tight text-[#0A1628] mb-3">
+                            Secure Your Coverage
+                        </h3>
+                        <p class="text-lg text-gray-600">
+                            Choose your plan, complete a simple application, and get
+                            protected—often within 48 hours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center fade-up" style="transition-delay: 300ms;">
+                <a href="#consultation"
+                    class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-[#0A1628] rounded-lg hover:bg-[#112240] transition-all shadow-md">
+                    Start With Step 1 — Book Your Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+
+
+    <!-- How It Works -->
+
+
+    <section class="bg-[#F5F5F5] pt-24 pb-24" id="testimonials">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-[#0A1628] mb-4">
+                    Real Stories From Real Families
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Don't just take our word for it. See what our clients have to say
+                    about their experience.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 fade-up">
+                    <div class="flex text-[#C9A84C] text-lg mb-4">
+                        <iconify-icon icon="solar:star-bold" class=""></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                    </div>
+                    <p class="text-lg text-gray-700 italic mb-6 leading-relaxed">
+                        "I put off getting life insurance for years because I thought it
+                        would be confusing and expensive. The advisor at Insurx Protect
+                        broke everything down simply and found a policy that fit our
+                        budget perfectly. The peace of mind is invaluable."
+                    </p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-[#0A1628] font-medium">
+                            MT
+                        </div>
+                        <div>
+                            <div class="text-base font-medium text-[#0A1628]">
+                                Marcus T., 42
+                            </div>
+                            <div class="text-sm text-gray-500">Atlanta, GA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 fade-up"
+                    style="transition-delay: 100ms;">
+                    <div class="flex text-[#C9A84C] text-lg mb-4">
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" class=""></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                    </div>
+                    <p class="text-lg text-gray-700 italic mb-6 leading-relaxed">
+                        "Zero pressure from start to finish. They didn't try to upsell me;
+                        they just wanted to make sure my kids would be taken care of if
+                        anything happened to me. The whole process took less than a week."
+                    </p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-[#0A1628] font-medium">
+                            SR
+                        </div>
+                        <div>
+                            <div class="text-base font-medium text-[#0A1628]">
+                                Sarah R., 35
+                            </div>
+                            <div class="text-sm text-gray-500">Denver, CO</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 fade-up"
+                    style="transition-delay: 200ms;">
+                    <div class="flex text-[#C9A84C] text-lg mb-4">
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                    </div>
+                    <p class="text-lg text-gray-700 italic mb-6 leading-relaxed">
+                        "As a business owner, I needed a complex setup to protect both my
+                        family and my company. Insurx Protect handled it like true
+                        professionals. Their expertise is evident in every conversation."
+                    </p>
+                    <div class="flex items-center gap-3 mt-auto">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-[#0A1628] font-medium">
+                            JL
+                        </div>
+                        <div>
+                            <div class="text-base font-medium text-[#0A1628]">
+                                James L., 50
+                            </div>
+                            <div class="text-sm text-gray-500">Austin, TX</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="z-20 overflow-hidden bg-white pt-24 pb-24 relative" id="find-agent">
+        <div
+            class="absolute inset-y-4 inset-x-4 md:inset-y-8 md:inset-x-8 bg-[#F8F9FA] rounded-[2rem] md:rounded-[3rem] pointer-events-none">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-12 fade-up">
+                <h2 class="md:text-4xl text-3xl font-medium text-[#0A1628] tracking-tight mb-4">
+                    Find Your Insurx Protect Agent
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Every agent is licensed, vetted, and ready to help you find the
+                    right coverage.
+                </p>
+            </div>
+
+            <!-- Search & Filters -->
+            <div class="max-w-3xl mx-auto mb-12 fade-up" style="transition-delay: 100ms;">
+                <div class="relative max-w-[600px] mx-auto mb-6">
+                    <iconify-icon icon="lucide:search"
+                        class="absolute left-5 top-1/2 -translate-y-1/2 text-xl text-gray-400"></iconify-icon>
+                    <input type="text" id="agent-search" placeholder="Search agents by name..."
+                        class="w-full pl-12 pr-12 py-4 rounded-xl border border-[#0A1628] bg-white text-[#0A1628] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#C9A84C] focus:border-transparent transition-all shadow-sm text-base">
+                    <button id="clear-search"
+                        class="absolute right-5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#0A1628] hidden flex items-center justify-center">
+                        <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+                    </button>
+                </div>
+
+                <div class="flex flex-wrap gap-3 pb-2 justify-center px-2 md:px-0" id="agent-filters">
+                    <button
+                        class="filter-chip flex-shrink-0 px-5 py-2 rounded-full text-sm font-medium transition-colors text-[#0A1628] border"
+                        data-filter="All">
+                        All Agents
+                    </button>
+                    <button
+                        class="filter-chip flex-shrink-0 px-5 py-2 rounded-full text-sm font-medium transition-colors bg-white border border-[#0A1628] text-[#0A1628] hover:bg-gray-50"
+                        data-filter="Term Life">
+                        Term Life
+                    </button>
+                    <button
+                        class="filter-chip flex-shrink-0 px-5 py-2 rounded-full text-sm font-medium transition-colors bg-white border border-[#0A1628] text-[#0A1628] hover:bg-gray-50"
+                        data-filter="Whole Life">
+                        Whole Life
+                    </button>
+                    <button
+                        class="filter-chip flex-shrink-0 px-5 py-2 rounded-full text-sm font-medium transition-colors bg-white border border-[#0A1628] text-[#0A1628] hover:bg-gray-50"
+                        data-filter="Final Expense">
+                        Final Expense
+                    </button>
+                    <button
+                        class="filter-chip flex-shrink-0 px-5 py-2 rounded-full text-sm font-medium transition-colors bg-white border border-[#0A1628] text-[#0A1628] hover:bg-gray-50"
+                        data-filter="Business Insurance">
+                        Business Insurance
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div id="agent-empty-state" class="hidden text-center py-16 fade-up">
+                <div
+                    class="w-16 h-16 bg-white border border-gray-200 rounded-full flex items-center justify-center mx-auto mb-4 text-[#0A1628] shadow-sm">
+                    <iconify-icon icon="lucide:search-x" class="text-2xl"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-medium tracking-tight text-[#0A1628] mb-2">
+                    No agents found
+                </h3>
+                <p class="text-gray-600">
+                    No agents found for that name. Try a different search or browse all
+                    agents below.
+                </p>
+                <button id="reset-search-btn"
+                    class="mt-6 text-[#C9A84C] font-semibold hover:text-[#0A1628] transition-colors">
+                    Clear Search
+                </button>
+            </div>
+
+            <!-- Grid -->
+            <div id="agent-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 fade-up"
+                style="transition-delay: 200ms;"><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        MT
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Marcus Thompson</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Dallas, TX</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Term
+                            Life</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Whole
+                            Life</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        SC
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Sarah Chen</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">San Francisco, CA</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Final
+                            Expense</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Senior
+                            Coverage</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        DR
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        David Rodriguez</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Miami, FL</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Term
+                            Life</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Business
+                            Insurance</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        AP
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Aisha Patel</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Chicago, IL</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Whole
+                            Life</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Senior
+                            Coverage</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        JO
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        James O'Brien</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Boston, MA</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Term
+                            Life</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Final
+                            Expense</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        MW
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Michelle Washington</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Atlanta, GA</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Whole
+                            Life</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Business
+                            Insurance</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        KN
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Kevin Nakamura</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Seattle, WA</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Term
+                            Life</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Senior
+                            Coverage</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        LM
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Lisa Martinez</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Phoenix, AZ</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Final
+                            Expense</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Whole
+                            Life</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        RK
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Robert Kim</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">New York, NY</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Business
+                            Insurance</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Term
+                            Life</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        AB
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Angela Brooks</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Houston, TX</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Senior
+                            Coverage</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Final
+                            Expense</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        DO
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Daniel Okafor</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Denver, CO</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Term
+                            Life</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Whole
+                            Life</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a><a href="#"
+                    class="block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group"
+                    style="animation: 0.5s ease-out 0s 1 normal forwards running fade-in-up;">
+                    <div
+                        class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                        JR
+                    </div>
+                    <h4
+                        class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">
+                        Jennifer Reeves</h4>
+                    <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">Charlotte, NC</p>
+                    <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                        <span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Whole
+                            Life</span><span
+                            class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">Business
+                            Insurance</span>
+                    </div>
+                    <div
+                        class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                        View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                    </div>
+                </a></div>
+
+            <!-- Load More -->
+            <div class="mt-12 text-center fade-up" style="transition-delay: 300ms;" id="agent-pagination">
+                <p class="text-sm text-gray-500 mb-4 font-medium tracking-wide" id="agent-count-text">Showing 12 of 247
+                    agents</p>
+                <button id="load-more-agents"
+                    class="inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-[#0A1628] bg-white border-2 border-[#0A1628] rounded-xl hover:bg-[#0A1628] hover:text-white transition-all w-full md:w-auto shadow-sm">
+                    Load More Agents
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Network Map Section -->
+
+
+    <!-- Testimonials -->
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-[#0A1628] mb-4">
+                    Common Questions, Straight Answers
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600">
+                    Everything you need to know about getting covered.
+                </p>
+            </div>
+
+            <div class="space-y-4 fade-up">
+                <details class="group border-b border-gray-200 pb-4" open="">
+                    <summary
+                        class="flex justify-between items-center font-medium text-xl tracking-tight text-[#0A1628] cursor-pointer py-2 list-none">
+                        <span class="">How much does life insurance cost?</span>
+                        <span class="transition group-open:rotate-180 text-[#C9A84C]">
+                            <iconify-icon icon="solar:alt-arrow-down-linear" class="text-xl"></iconify-icon>
+                        </span>
+                    </summary>
+                    <div class="text-lg text-gray-600 mt-3 leading-relaxed pr-8">
+                        Costs vary based on your age, health, coverage amount, and the
+                        type of policy you choose. However, term life insurance is often
+                        much more affordable than people think—many healthy adults in
+                        their 30s can secure substantial coverage for less than a dollar a
+                        day.
+                    </div>
+                </details>
+
+                <details class="group border-b border-gray-200 pb-4">
+                    <summary
+                        class="flex justify-between items-center font-medium text-xl tracking-tight text-[#0A1628] cursor-pointer py-2 list-none">
+                        <span>Do I need a medical exam?</span>
+                        <span class="transition group-open:rotate-180 text-[#C9A84C]">
+                            <iconify-icon icon="solar:alt-arrow-down-linear" class="text-xl"></iconify-icon>
+                        </span>
+                    </summary>
+                    <div class="text-lg text-gray-600 mt-3 leading-relaxed pr-8">
+                        Not necessarily. We offer many "no-exam" options where approval is
+                        based on a quick health questionnaire and electronic record
+                        checks. If an exam is required to get you the best rate, we
+                        arrange it at your convenience, usually in your own home.
+                    </div>
+                </details>
+
+                <details class="group border-b border-gray-200 pb-4">
+                    <summary
+                        class="flex justify-between items-center font-medium text-xl tracking-tight text-[#0A1628] cursor-pointer py-2 list-none">
+                        <span>What's the difference between term and whole life?</span>
+                        <span class="transition group-open:rotate-180 text-[#C9A84C]">
+                            <iconify-icon icon="solar:alt-arrow-down-linear" class="text-xl"></iconify-icon>
+                        </span>
+                    </summary>
+                    <div class="text-lg text-gray-600 mt-3 leading-relaxed pr-8">
+                        Term life covers you for a specific period (like 20 years) and
+                        pays out if you pass away during that time; it's the most
+                        affordable option. Whole life covers you for your entire life,
+                        never expires as long as premiums are paid, and includes a cash
+                        value component that grows over time.
+                    </div>
+                </details>
+
+                <details class="group border-b border-gray-200 pb-4">
+                    <summary
+                        class="flex justify-between items-center font-medium text-xl tracking-tight text-[#0A1628] cursor-pointer py-2 list-none">
+                        <span>How long does it take to get coverage?</span>
+                        <span class="transition group-open:rotate-180 text-[#C9A84C]">
+                            <iconify-icon icon="solar:alt-arrow-down-linear" class="text-xl"></iconify-icon>
+                        </span>
+                    </summary>
+                    <div class="text-lg text-gray-600 mt-3 leading-relaxed pr-8">
+                        With modern, simplified underwriting, many of our clients are
+                        approved and covered within 48 hours of their application. Fully
+                        underwritten policies (requiring an exam) typically take 3 to 6
+                        weeks.
+                    </div>
+                </details>
+
+                <details class="group border-b border-gray-200 pb-4">
+                    <summary
+                        class="flex justify-between items-center font-medium text-xl tracking-tight text-[#0A1628] cursor-pointer py-2 list-none">
+                        <span>Can I change my policy later?</span>
+                        <span class="transition group-open:rotate-180 text-[#C9A84C]">
+                            <iconify-icon icon="solar:alt-arrow-down-linear" class="text-xl"></iconify-icon>
+                        </span>
+                    </summary>
+                    <div class="text-lg text-gray-600 mt-3 leading-relaxed pr-8">
+                        Yes. Life changes, and your coverage should too. Many term
+                        policies have options to convert to permanent coverage later
+                        without another health exam. You can also typically decrease your
+                        coverage amount or apply for additional coverage as needed.
+                    </div>
+                </details>
+
+                <details class="group border-b border-gray-200 pb-4">
+                    <summary
+                        class="flex justify-between items-center font-medium text-xl tracking-tight text-[#0A1628] cursor-pointer py-2 list-none">
+                        <span>Is my consultation really free?</span>
+                        <span class="transition group-open:rotate-180 text-[#C9A84C]">
+                            <iconify-icon icon="solar:alt-arrow-down-linear" class="text-xl"></iconify-icon>
+                        </span>
+                    </summary>
+                    <div class="text-lg text-gray-600 mt-3 leading-relaxed pr-8">
+                        Absolutely. Our consultations are 100% free and carry zero
+                        obligation. Our goal is to provide you with the information you
+                        need to make the best decision for your family, whether you choose
+                        to purchase through us or not.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="consultation" class="py-24 bg-[#0A1628] text-center px-6 border-b border-white/10">
+        <div class="max-w-4xl mx-auto fade-up">
+            <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-white mb-6 leading-tight">
+                Your Family's Security Starts With One Conversation
+            </h2>
+            <p class="md:text-xl text-lg text-gray-300 max-w-2xl mr-auto mb-10 ml-auto">
+                Book your free, no-obligation consultation with a licensed Insurx
+                Protect advisor today. Get answers, compare options, and find peace of
+                mind.
+            </p>
+
+            <button
+                class="inline-flex hover:bg-[#b5953e] hover:-translate-y-1 transition-all shadow-[#C9A84C]/20 sm:w-auto text-xl font-medium text-gray-50 bg-[#C9A84C] w-full rounded-lg mb-4 px-10 py-5 shadow-xl items-center justify-center">
+                Book Your Free Consultation Now
+            </button>
+
+            <p class="text-base font-normal text-gray-400">
+                No credit card required. No spam. Just a conversation about your
+                future.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2D2D2D] text-gray-400 py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+                <div>
+                    <h5 class="text-white font-medium mb-4 tracking-tight text-lg">
+                        Company
+                    </h5>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Careers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Press
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Partners
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-medium mb-4 tracking-tight text-lg">
+                        Products
+                    </h5>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Term Life
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Whole Life
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Final Expense
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Compare Plans
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h5 class="text-white font-medium mb-4 tracking-tight text-lg">
+                        Resources
+                    </h5>
+                    <ul class="space-y-3">
+                        <li class="">
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Insurance 101
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base hover:text-white transition-colors">
+                                Calculators
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-medium mb-4 tracking-tight text-lg">
+                        Contact
+                    </h5>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-base">
+                            <iconify-icon icon="solar:phone-linear"></iconify-icon>
+                            1-800-555-0199
+                        </li>
+                        <li class="flex items-center gap-2 text-base">
+                            <iconify-icon icon="solar:letter-linear"></iconify-icon>
+                            help@insurxprotect.com
+                        </li>
+                        <li class="flex items-center gap-2 text-base">
+                            <iconify-icon icon="solar:map-point-linear"></iconify-icon>
+                            100 Security Way, NY
+                        </li>
+                    </ul>
+
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <iconify-icon icon="solar:linkedin-outline" class="text-2xl"></iconify-icon>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <iconify-icon icon="solar:facebook-outline" class="text-2xl"></iconify-icon>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <iconify-icon icon="solar:camera-outline" class="text-2xl"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex flex-col items-center md:items-start gap-2">
+                    <p class="text-sm">© 2026 Insurx Protect. All rights reserved.</p>
+                    <p class="text-sm text-gray-500 max-w-2xl text-center md:text-left">
+                        Insurx Protect is a licensed insurance agency. Coverage and
+                        availability vary by state. Policy forms, limitations, and
+                        exclusions apply.
+                    </p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="text-sm hover:text-white transition-colors">
+                        Privacy Policy
+                    </a>
+                    <a href="#" class="text-sm hover:text-white transition-colors">
+                        Terms of Service
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Logo Slider Animation Logic
+        const logoSlider = document.getElementById('logo-slider-track');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        if (logoSlider && prevBtn && nextBtn) {
+            const scrollAmount = 350; // Approximates one logo width + gap
+
+            nextBtn.addEventListener('click', () => {
+                logoSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+
+            prevBtn.addEventListener('click', () => {
+                logoSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+
+            // Auto-scroll logic that loops smoothly
+            let autoScrollInterval = setInterval(() => {
+                // If reached the end, reset scroll position smoothly
+                if (logoSlider.scrollLeft + logoSlider.clientWidth >= logoSlider.scrollWidth - 10) {
+                    logoSlider.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    logoSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                }
+            }, 3000);
+
+            // Pause animation on user interaction
+            logoSlider.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+            logoSlider.addEventListener('touchstart', () => clearInterval(autoScrollInterval));
+
+            // Resume on leave
+            logoSlider.addEventListener('mouseleave', () => {
+                autoScrollInterval = setInterval(() => {
+                    if (logoSlider.scrollLeft + logoSlider.clientWidth >= logoSlider.scrollWidth - 10) {
+                        logoSlider.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        logoSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    }
+                }, 3000);
+            });
+        }
+
+        // Intersection Observer for Fade Up Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+
+                    // Trigger counter animation if element has counter class
+                    const counters = entry.target.querySelectorAll('.counter');
+                    if (counters.length > 0) {
+                        counters.forEach(counter => {
+                            const target = +counter.getAttribute('data-target');
+                            const duration = 2000; // ms
+                            const increment = target / (duration / 16); // 60fps
+                            let current = 0;
+
+                            const updateCounter = () => {
+                                current += increment;
+                                if (current < target) {
+                                    counter.innerText = Math.ceil(current);
+                                    requestAnimationFrame(updateCounter);
+                                } else {
+                                    counter.innerText = target.toLocaleString();
+                                }
+                            };
+
+                            // Only run once
+                            if (counter.innerText === "0" || counter.innerText === "1") {
+                                updateCounter();
+                            }
+                        });
+                    }
+
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const baseAgents = [
+                { name: "Marcus Thompson", location: "Dallas, TX", specialties: ["Term Life", "Whole Life"], initials: "MT" },
+                { name: "Sarah Chen", location: "San Francisco, CA", specialties: ["Final Expense", "Senior Coverage"], initials: "SC" },
+                { name: "David Rodriguez", location: "Miami, FL", specialties: ["Term Life", "Business Insurance"], initials: "DR" },
+                { name: "Aisha Patel", location: "Chicago, IL", specialties: ["Whole Life", "Senior Coverage"], initials: "AP" },
+                { name: "James O'Brien", location: "Boston, MA", specialties: ["Term Life", "Final Expense"], initials: "JO" },
+                { name: "Michelle Washington", location: "Atlanta, GA", specialties: ["Whole Life", "Business Insurance"], initials: "MW" },
+                { name: "Kevin Nakamura", location: "Seattle, WA", specialties: ["Term Life", "Senior Coverage"], initials: "KN" },
+                { name: "Lisa Martinez", location: "Phoenix, AZ", specialties: ["Final Expense", "Whole Life"], initials: "LM" },
+                { name: "Robert Kim", location: "New York, NY", specialties: ["Business Insurance", "Term Life"], initials: "RK" },
+                { name: "Angela Brooks", location: "Houston, TX", specialties: ["Senior Coverage", "Final Expense"], initials: "AB" },
+                { name: "Daniel Okafor", location: "Denver, CO", specialties: ["Term Life", "Whole Life"], initials: "DO" },
+                { name: "Jennifer Reeves", location: "Charlotte, NC", specialties: ["Whole Life", "Business Insurance"], initials: "JR" }
+            ];
+
+            let allAgents = [];
+            const totalAgents = 247;
+            for (let i = 0; i < totalAgents; i++) {
+                let base = baseAgents[i % baseAgents.length];
+                allAgents.push({
+                    ...base,
+                    name: i < baseAgents.length ? base.name : `${base.name.split(' ')[0]} ${base.name.split(' ')[1]} ${Math.floor(i / baseAgents.length)}`
+                });
+            }
+
+            let visibleCount = 12;
+            const grid = document.getElementById('agent-grid');
+            const searchInput = document.getElementById('agent-search');
+            const clearBtn = document.getElementById('clear-search');
+            const filterChips = document.querySelectorAll('.filter-chip');
+            const emptyState = document.getElementById('agent-empty-state');
+            const countText = document.getElementById('agent-count-text');
+            const resetBtn = document.getElementById('reset-search-btn');
+            const loadMoreBtn = document.getElementById('load-more-agents');
+            const paginationArea = document.getElementById('agent-pagination');
+
+            let currentSearch = '';
+            let currentFilter = 'All';
+
+            function renderAgents() {
+                const filtered = allAgents.filter(agent => {
+                    const matchesSearch = agent.name.toLowerCase().includes(currentSearch.toLowerCase());
+                    const matchesFilter = currentFilter === 'All' || agent.specialties.includes(currentFilter);
+                    return matchesSearch && matchesFilter;
+                });
+
+                grid.innerHTML = '';
+                const displayed = filtered.slice(0, visibleCount);
+
+                if (filtered.length === 0) {
+                    grid.classList.add('hidden');
+                    emptyState.classList.remove('hidden');
+                    paginationArea.classList.add('hidden');
+                } else {
+                    grid.classList.remove('hidden');
+                    emptyState.classList.add('hidden');
+                    paginationArea.classList.remove('hidden');
+
+                    displayed.forEach((agent, index) => {
+                        const specialtiesHTML = agent.specialties.slice(0, 2).map(s =>
+                            `<span class="bg-[#0A1628] text-white text-[11px] px-2.5 py-1 rounded-full whitespace-nowrap">${s}</span>`
+                        ).join('');
+
+                        const card = document.createElement('a');
+                        card.href = "#";
+                        card.className = "block bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center group";
+
+                        if (index >= visibleCount - 12 && index > 0) {
+                            card.style.animation = "fade-in-up 0.5s ease-out forwards";
+                            card.style.opacity = "0";
+                        }
+
+                        card.innerHTML = `
+                          <div class="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full border-2 border-[#C9A84C] bg-gray-50 flex items-center justify-center text-[#0A1628] text-xl md:text-2xl font-medium mb-4 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm">
+                              ${agent.initials}
+                          </div>
+                          <h4 class="text-[16px] md:text-[18px] font-semibold tracking-tight text-[#0A1628] mb-1 line-clamp-1">${agent.name}</h4>
+                          <p class="text-[13px] md:text-[14px] text-[#2D2D2D] mb-4">${agent.location}</p>
+                          <div class="w-full h-px bg-gray-100 mb-4 group-hover:bg-gray-200 transition-colors"></div>
+                          <div class="flex flex-wrap justify-center gap-2 mb-6 mt-auto">
+                              ${specialtiesHTML}
+                          </div>
+                          <div class="text-[#C9A84C] text-[14px] font-semibold flex items-center gap-1.5 group-hover:translate-x-1 group-hover:text-[#0A1628] transition-all duration-300">
+                              View Profile <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+                          </div>
+                      `;
+                        grid.appendChild(card);
+                    });
+
+                    countText.textContent = `Showing ${displayed.length} of ${filtered.length} agents`;
+
+                    if (displayed.length >= filtered.length) {
+                        loadMoreBtn.classList.add('hidden');
+                    } else {
+                        loadMoreBtn.classList.remove('hidden');
+                    }
+                }
+            }
+
+            searchInput.addEventListener('input', (e) => {
+                currentSearch = e.target.value;
+                visibleCount = 12;
+                if (currentSearch.length > 0) {
+                    clearBtn.classList.remove('hidden');
+                } else {
+                    clearBtn.classList.add('hidden');
+                }
+                renderAgents();
+            });
+
+            const clearSearch = () => {
+                searchInput.value = '';
+                currentSearch = '';
+                visibleCount = 12;
+                clearBtn.classList.add('hidden');
+                renderAgents();
+            };
+
+            clearBtn.addEventListener('click', clearSearch);
+            resetBtn.addEventListener('click', clearSearch);
+
+            filterChips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    filterChips.forEach(c => {
+                        c.classList.remove('bg-[#C9A84C]', 'border-transparent');
+                        c.classList.add('bg-white', 'border-[#0A1628]');
+                    });
+
+                    chip.classList.remove('bg-white', 'border-[#0A1628]');
+                    chip.classList.add('bg-[#C9A84C]', 'border-transparent');
+
+                    currentFilter = chip.getAttribute('data-filter');
+                    visibleCount = 12;
+                    renderAgents();
+                });
+            });
+
+            loadMoreBtn.addEventListener('click', () => {
+                visibleCount += 12;
+                renderAgents();
+            });
+
+            if (!document.getElementById('agent-animations')) {
+                const style = document.createElement('style');
+                style.id = 'agent-animations';
+                style.innerHTML = `
+                  @keyframes fade-in-up {
+                      0% { opacity: 0; transform: translateY(16px); }
+                      100% { opacity: 1; transform: translateY(0); }
+                  }
+              `;
+                document.head.appendChild(style);
+            }
+
+            if (grid) renderAgents();
+        });
+    </script>
+
+</body>
+
+</html>
